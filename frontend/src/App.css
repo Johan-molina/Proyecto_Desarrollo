@@ -1,0 +1,203 @@
+body {
+    background: linear-gradient(135deg, #eef2f7, #f8fafc);
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+    margin: 0;
+}
+
+/* ===== HOME ===== */
+.home {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+/* ===== CARDS ===== */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.custom-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+    /* Hover PRO */
+    .custom-card:hover {
+        transform: translateY(-12px) scale(1.02);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    /* Títulos */
+    .custom-card h2 {
+        margin-bottom: 10px;
+        color: #111827;
+    }
+
+    /* Texto */
+    .custom-card p {
+        color: #6b7280;
+        font-size: 0.95rem;
+    }
+
+/* ===== BOTONES ===== */
+.btn-custom {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #3498db, #2563eb);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+    /* Hover botón */
+    .btn-custom:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-card {
+        width: 90%;
+    }
+    /* ===== CONTENEDOR ===== */
+    .table-container {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    /* ===== TÍTULO ===== */
+    .table-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1f2937;
+    }
+
+    /* ===== TABLA ===== */
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+        .custom-table thead {
+            background: #f9fafb;
+        }
+
+        .custom-table th {
+            text-align: left;
+            padding: 12px;
+            font-size: 0.85rem;
+            color: #6b7280;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .custom-table td {
+            padding: 14px 12px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.9rem;
+            color: #374151;
+        }
+
+        /* ===== HOVER FILA ===== */
+        .custom-table tbody tr:hover {
+            background: #f3f4f6;
+        }
+
+    /* ===== BADGE ID ===== */
+    .badge-id {
+        background: #3b82f6;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-size: 0.75rem;
+    }
+
+    /* ===== ACCIONES ===== */
+    .actions {
+        display: flex;
+        gap: 8px;
+    }
+
+    /* BOTONES */
+    .btn-edit {
+        background: #facc15;
+        border: none;
+        padding: 8px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+        .btn-edit:hover {
+            background: #eab308;
+        }
+
+    .btn-delete {
+        background: #ef4444;
+        border: none;
+        padding: 8px 10px;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+        .btn-delete:hover {
+            background: #dc2626;
+        }
+
+    /* ===== BOTÓN NUEVO ===== */
+    .btn-new {
+        background: linear-gradient(135deg, #22c55e, #16a34a);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        float: right;
+        transition: 0.3s;
+    }
+
+        .btn-new:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(34,197,94,0.3);
+        }
+}
